@@ -73,7 +73,7 @@ ${(data.get('message') || '').toString().trim()}
 
 We agree to abide by the norms of the Protappur Baroyari Durga Puja Committee.`
         );
-        const mailto = `mailto:protappurpuja@gmail.com?subject=Sponsor%20Commitment&body=${body}`;
+        const mailto = `mailto:pbdpc.info@gmail.com?subject=Sponsor%20Commitment&body=${body}`;
         window.location.href = mailto;
 
         // Optional: show a quick toast
@@ -88,30 +88,24 @@ if (downloadBtn) {
     downloadBtn.addEventListener('click', () => {
         const rows = [
             ['Category', 'Amount (₹)', 'Benefits'],
-            ['Title Sponsor', '100000+', 'Logo on Main Banner; Stage Announcements; Prime Stall'],
-            ['Gold Sponsor', '50000+', 'Logo on Posters; Stall Space; Announcements'],
-            ['Silver Sponsor', '25000+', 'Logo on Flex; Name in Leaflets'],
-            ['Associate Sponsor', '10000+', 'Social Media Mention; Leaflets'],
+            ['Title Sponsor', '148000+', 'Co-Sponsor; Partners Sponsor; Associate Sponsor; Puja Special Website Advertising & Social Media Advertising'],
+            ['Main Gate', '50000+', 'Main Gate; Over Gate; Main Stage Background; Puja Special Website Advertising & Social Media Advertising'],
+            ['Banners', '25000+', 'Banner (20 X 10); Banner (10 X 5); Banner (6 X 3)'],
             [],
             ['Location / Item', 'Amount (₹)'],
-            ['Main Gate (2)', '20000'],
-            ['Main Stage (1)', '15000'],
-            ['Near Fountain (4)', '10000'],
-            ['Tower Banner (each)', '5000'],
-            ["Banner 20'x10'", '5000'],
-            ["Banner 10'x5'", '2500'],
-            ["Banner 6'x3'", '1000'],
-            ["Kiosk / Stall (3'x4')", '5000'],
+            ['Title Sponsor', '50000'],
+            ['Co-Sponsor', '40000'],
+            ['Partners Sponsor', '30000'],
+            ['Associate Sponsor', '25000'],
+            ['Main Gate', '20000'],
+            ['Over Gate', '15000'],
+            ['Main Stage Background', '12000'],
+            ["Banner 20'x10'", '10000'],
+            ["Banner 10'x5'", '7000'],
+            ["Banner 6'x3'", '5000'],
+            ["Puja Special Website Advertising & Social Media Advertising", '3000'],
             [],
-            ['Souvenir Position', 'Amount (₹)'],
-            ['Back Cover – Outside', '20000'],
-            ['Front Cover – Inside', '15000'],
-            ['Inside Half Flip (Front/Back)', '7500'],
-            ['Back Cover – Inside', '15000'],
-            ['Full Page', '10000'],
-            ['Half Page', '5000'],
-            ['Quarter Page', '3000'],
-            ['Special Page', '20000'],
+           
         ];
         const csv = rows.map(r => r.map(x => `"${String(x).replace(/"/g, '""')}"`).join(',')).join('\n');
         const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
