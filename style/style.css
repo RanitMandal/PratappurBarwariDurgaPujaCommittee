@@ -450,5 +450,10 @@ textarea:focus {
 .cta-row {
     display: flex;
     gap: 12px;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.tiers {
+    margin-bottom: 20px;
 }
